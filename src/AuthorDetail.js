@@ -5,7 +5,7 @@ const AuthorDetail = (props) => {
     const books = author.books.map(book => {
         return (
 
-            <tr>
+            <tr key={book.title}>
                 <td>{book.title}</td>
                 <td>{author.first_name + " " + author.last_name}</td>
                 <td>
